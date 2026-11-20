@@ -3,6 +3,21 @@
 Hub do projeto MindLiner, o app de estudos gamificado do TCC de Engenharia de Software (Unicesumar).
 Aqui ficam a documentação, o design e o mapa dos repositórios de código.
 
+> 📚 **Quer ler a documentação pelo navegador?** Comece pelo [sumário da documentação](docs/README.md): requisitos, casos de uso, diagramas, arquitetura, gestão e design em páginas que abrem direto no GitHub.
+
+## Sumário
+
+- [Repositórios](#repositórios)
+- [Montar o ambiente](#montar-o-ambiente)
+- [Rodar tudo junto](#rodar-tudo-junto)
+- [Combinados da equipe](#combinados-da-equipe)
+- [Design](#design)
+- [Documentação](#documentação)
+  - [Sumário completo da documentação](docs/README.md)
+  - [Requisitos funcionais](docs/02-requisitos/requisitos-funcionais.md) · [Regras de negócio](docs/02-requisitos/regras-de-negocio.md) · [Histórias de usuário](docs/02-requisitos/historias-de-usuario.md)
+  - [Diagrama de casos de uso](docs/03-diagramas/diagrama-de-casos-de-uso.md) · [Diagrama de classes](docs/03-diagramas/diagrama-de-classes.md) · [Diagramas de sequência](docs/03-diagramas/diagramas-de-sequencia.md)
+  - [Arquitetura](docs/04-arquitetura/arquitetura.md) · [Wireframes](docs/05-design/wireframes.md)
+
 ## Repositórios
 
 | Repositório | O que tem | Stack |
@@ -73,9 +88,12 @@ O front web usa um proxy do Vite para `/api`, então não depende do CORS. O bac
 
 ## Documentação
 
-| Pasta | Conteúdo |
-|---|---|
-| `Documentos de Diagramas/` | Casos de uso, diagramas de sequência e de classe, histórias de usuário, requisitos e regras de negócio |
-| `Documentação Arquitetura/` | Documento de arquitetura |
-| `Documentação de Gestão - Mercado/` | Abertura do projeto, RACI, SWOT, concorrentes, LGPD e CDC |
-| `Design - UI/` | Pesquisa de branding e wireframes |
+| Pasta | Conteúdo | Ler no GitHub |
+|---|---|---|
+| `Documentos de Diagramas/` | Casos de uso, diagramas de sequência e de classe, histórias de usuário, requisitos e regras de negócio | [Requisitos](docs/README.md#2-requisitos) · [Diagramas](docs/README.md#3-diagramas) |
+| `Documentação Arquitetura/` | Documento de arquitetura | [Arquitetura](docs/04-arquitetura/arquitetura.md) |
+| `Documentação de Gestão - Mercado/` | Abertura do projeto, RACI, SWOT, concorrentes, LGPD e CDC | [Gestão e mercado](docs/README.md#1-gestão-e-mercado) |
+| `Design - UI/` | Pesquisa de branding e wireframes | [Branding](docs/05-design/pesquisa-de-branding.md) · [Wireframes](docs/05-design/wireframes.md) |
+| `Consolidado de Horas por Integrante - Projeto TI.pdf` | Horas rastreadas por integrante | [Horas](docs/06-acompanhamento/horas-por-integrante.md) |
+
+Os arquivos originais (.docx, .xlsx, .drawio, .pdf) continuam sendo a fonte oficial. A pasta [`docs/`](docs/README.md) tem uma versão de cada um em Markdown, e os diagramas do draw.io viraram Mermaid, que o GitHub desenha na página. Mudou algum original? Rode `python3 scripts/docs/gerar_docs.py` para atualizar as páginas (detalhes no [fim do sumário](docs/README.md#7-como-atualizar-estas-páginas)).
