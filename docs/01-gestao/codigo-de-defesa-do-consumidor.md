@@ -2,9 +2,27 @@
 
 > Página gerada a partir de [`Mapeamento do Código de Defesa do Consumidor (Mindliner).docx`](../../Documenta%C3%A7%C3%A3o%20de%20Gest%C3%A3o%20-%20Mercado/Mapeamento%20do%20C%C3%B3digo%20de%20Defesa%20do%20Consumidor%20%28Mindliner%29.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md)
 
-#  Mapeamento do Código de Defesa do Consumidor (Mindliner). 
+## Sumário
+
+- [Mapeamento do Código de Defesa do Consumidor (Mindliner).](#mapeamento-do-código-de-defesa-do-consumidor-mindliner)
+- [1. Usuários e Autenticação](#1-usuários-e-autenticação)
+- [2. Gerenciamento de Estudos](#2-gerenciamento-de-estudos)
+- [3. Controle de Tempo](#3-controle-de-tempo)
+- [4. Técnicas de Estudo](#4-técnicas-de-estudo)
+- [5. Gamificação](#5-gamificação)
+- [6. Grupos de Estudo](#6-grupos-de-estudo)
+- [7. Monitoramento e Relatórios](#7-monitoramento-e-relatórios)
+- [8. Inteligência Artificial](#8-inteligência-artificial)
+- [9. Notificações](#9-notificações)
+- [10. Foco e Controle de Distrações](#10-foco-e-controle-de-distrações)
+- [11. Personalização e Acessibilidade](#11-personalização-e-acessibilidade)
+- [12. Compras e Pagamentos](#12-compras-e-pagamentos)
+- [14. Termos de Uso e Contratos](#14-termos-de-uso-e-contratos)
+- [15. Administração e Loja](#15-administração-e-loja)
+
+##  Mapeamento do Código de Defesa do Consumidor (Mindliner). 
 
 A aplicação do Código de Defesa do Consumidor (CDC) ao sistema deve ser analisada de acordo com a natureza de cada agrupamento funcional. Considerando que a plataforma oferece serviços digitais de estudo e também possibilita a aquisição de conteúdos e recursos pagos, as principais obrigações estão relacionadas à transparência, qualidade e adequação do serviço, cumprimento da oferta, proteção contra práticas abusivas, contratação eletrônica e proteção dos direitos do consumidor.
 
@@ -14,7 +32,7 @@ O mapeamento foi realizado conforme agrupamento dos requisitos disponíveis até
 
 O texto compilado utilizado contempla as alterações de novas leis, apresentando sua versão vigente conforme o Governo Federal.
 
-# 1. Usuários e Autenticação
+## 1. Usuários e Autenticação
 
 Este agrupamento contempla o cadastro, autenticação, recuperação de acesso, gerenciamento das informações do usuário e encerramento da conta.
 
@@ -30,9 +48,7 @@ O consumidor possui direito de acesso às informações existentes em cadastros 
 
 Esse artigo possui relação com o gerenciamento das informações da conta. Entretanto, os aspectos específicos de tratamento, correção, eliminação e proteção de dados pessoais devem ser complementados pela LGPD.
 
-# 
-
-# 2. Gerenciamento de Estudos
+## 2. Gerenciamento de Estudos
 
 Este agrupamento compreende o gerenciamento de disciplinas, conteúdos, roteiros, metas, sessões, histórico e progresso dos estudos.
 
@@ -52,9 +68,7 @@ O dispositivo trata de situações em que o serviço apresenta vícios de qualid
 
 Aplicação ao sistema: Funcionalidades de estudo que sejam apresentadas como parte do serviço devem funcionar de maneira compatível com suas características anunciadas.
 
-# 
-
-# 3. Controle de Tempo
+## 3. Controle de Tempo
 
 O agrupamento contempla cronômetro, timer, início, pausa e encerramento das sessões, além da persistência e recuperação do estado da sessão.
 
@@ -70,9 +84,7 @@ A funcionalidade deve corresponder às características e condições apresentad
 
 Portanto, a aplicação desses artigos está relacionada principalmente à confiabilidade e adequação das funcionalidades oferecidas.
 
-# 
-
-# 4. Técnicas de Estudo
+## 4. Técnicas de Estudo
 
 O sistema disponibiliza diferentes técnicas de estudo, incluindo técnicas predefinidas e personalizadas, com parâmetros, ciclos, etapas e acompanhamento do progresso.
 
@@ -96,7 +108,7 @@ Art. 37 — Publicidade enganosa ou abusiva
 
 Aplicação: a divulgação das técnicas de estudo não deve atribuir ao sistema características, resultados ou funcionalidades que ele não efetivamente oferece.
 
-# 5. Gamificação
+## 5. Gamificação
 
 A gamificação compreende pontos, moedas virtuais, check-ins, medalhas, conquistas, ranking e troca de moedas por recompensas.
 
@@ -118,9 +130,7 @@ O fornecedor não pode se aproveitar da vulnerabilidade ou ignorância do consum
 
 Aplicação no sistema: A gamificação deve possuir regras transparentes e não pode utilizar mecanismos que levem o usuário a realizar uma aquisição mediante informação enganosa ou prática abusiva.
 
-# 
-
-# 6. Grupos de Estudo
+## 6. Grupos de Estudo
 
 O agrupamento permite criação de grupos, ingresso e saída de participantes, visualização de integrantes, definição de privacidade, gerenciamento de membros e compartilhamento por convites.
 
@@ -134,7 +144,7 @@ As funcionalidades relacionadas aos grupos devem funcionar de acordo com as cara
 
 Observação: a proteção das informações dos participantes e o tratamento dos dados pessoais estão mais diretamente relacionados à LGPD do que ao CDC.
 
-# 7. Monitoramento e Relatórios
+## 7. Monitoramento e Relatórios
 
 O sistema disponibiliza dashboards, gráficos, indicadores e relatórios relacionados ao desempenho dos estudos.
 
@@ -150,7 +160,7 @@ Art. 37 — Publicidade enganosa
 
 Caso determinados indicadores ou resultados sejam utilizados na publicidade do produto, as informações não podem induzir o consumidor a conclusões equivocadas sobre o desempenho ou as capacidades da plataforma.
 
-# 8. Inteligência Artificial
+## 8. Inteligência Artificial
 
 A plataforma possui um agente de inteligência artificial que utiliza informações fornecidas pelo usuário e seu histórico de estudos para gerar recomendações e metas personalizadas.
 
@@ -168,9 +178,7 @@ A plataforma não deve atribuir à inteligência artificial capacidades que ela 
 
 Como a IA utiliza informações pessoais e histórico de estudos, a análise deve ser complementada pela LGPD, especialmente quanto à transparência e ao tratamento dos dados.
 
-# 
-
-# 9. Notificações
+## 9. Notificações
 
 O sistema permite configurar preferências e ativar ou desativar notificações.
 
@@ -186,7 +194,7 @@ Art. 39, III — Serviço não solicitado
 
 O CDC veda o fornecimento de produto ou serviço sem solicitação prévia do consumidor. Por isso, é importante diferenciar notificações necessárias ao funcionamento do serviço de comunicações comerciais.
 
-# 10. Foco e Controle de Distrações
+## 10. Foco e Controle de Distrações
 
 O sistema permite configurar aplicativos para bloqueio e identificar a abertura desses aplicativos durante uma sessão de estudo.
 
@@ -198,7 +206,7 @@ Art. 14 — Responsabilidade pelo serviço
 
 A funcionalidade deve funcionar de acordo com as características apresentadas ao consumidor. Assim, se houver limitações técnicas — por exemplo, determinados aplicativos ou situações que não possam ser bloqueadas — essa informação deve ser apresentada de forma adequada.
 
-# 11. Personalização e Acessibilidade
+## 11. Personalização e Acessibilidade
 
 O sistema permite personalização visual, modo claro e escuro, cores, ícones, GIFs e filtros de acessibilidade.
 
@@ -214,7 +222,7 @@ Art. 31 — Informação correta e precisa
 
 As descrições das funcionalidades devem corresponder ao seu comportamento real.
 
-# 12. Compras e Pagamentos
+## 12. Compras e Pagamentos
 
 Este é o agrupamento com maior incidência direta do CDC, pois envolve aquisição de recursos pagos, meios de pagamento, confirmação de transações, comprovantes e histórico de compras.
 
@@ -280,9 +288,7 @@ Trata do exercício do direito de arrependimento nas contratações eletrônicas
 
 Portanto, a compra não deve ser tratada somente como uma operação de pagamento: Existe todo um processo de contratação eletrônica que precisa fornecer informação, confirmação, segurança e mecanismos de cancelamento.
 
-# 
-
-# 14. Termos de Uso e Contratos
+## 14. Termos de Uso e Contratos
 
 Os Termos de Uso estabelecem as condições de utilização da plataforma e, quando houver relação de consumo, estão sujeitos às regras de proteção contratual do CDC.
 
@@ -312,7 +318,7 @@ Art. 54 — Contratos de adesão
 
 É relevante porque os Termos de Uso de uma plataforma normalmente são apresentados ao usuário de forma padronizada, sem negociação individual das cláusulas.
 
-# 15. Administração e Loja
+## 15. Administração e Loja
 
 O backoffice permite que administradores cadastrem, editem, inativam e definam preços dos itens oferecidos na loja.
 
@@ -329,3 +335,7 @@ Art. 51, X e XIII — Alterações unilaterais
 O CDC considera abusivas cláusulas que permitam ao fornecedor variar unilateralmente o preço ou modificar unilateralmente o conteúdo ou a qualidade do contrato após sua celebração.
 
 Isso é particularmente relevante para a loja: Alterações administrativas podem valer para novas compras, mas não devem modificar arbitrariamente condições já contratadas pelo consumidor.
+
+---
+
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md) · [↑ Topo da página](#)

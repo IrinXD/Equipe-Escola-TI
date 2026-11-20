@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`Casos de Uso (Atualizados).docx`](../../Documentos%20de%20Diagramas/Casos%20de%20Uso%20%28Atualizados%29.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -548,7 +548,6 @@
 **Fluxos Alternativos:**
 
 - **FA-01: Sessão já ativa** - Sistema identifica uma sessão em andamento, impede nova sessão, usuário encerra a anterior.
-
 - **FA-02: Interrupção Inesperada** - O aplicativo é fechado abruptamente, progresso gravado localmente, ao reabrir o sistema redireciona para FA-03.
 
 - **FA-03: Recuperação de Sessão Pendente** - O sistema calcula tempo válido estudado e exibe modal de recuperação (Salvar, Continuar ou Descartar).
@@ -1218,7 +1217,6 @@
 **Fluxos Alternativos:**
 
 - **FA-01: Convidar por E-mail** - Usuário insere endereços, sistema valida e dispara convites por e-mail automaticamente.
-
 - **FA-02: Revogar Link** - O administrador gera um novo link ou revoga o atual, invalidando convites antigos vazados.
 
 **Pós-condições:** Grupo compartilhado com sucesso.
@@ -1930,3 +1928,7 @@
 - **FA-01: Inativar/Remover Item** - Administrador opta por retirar uma skin sazonal. O sistema oculta a skin das próximas compras, mantendo a posse inalterada no inventário de quem já comprou.
 
 **Pós-condições:** Loja de recompensas alimentada e em funcionamento para base de usuários normais.
+
+---
+
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md) · [↑ Topo da página](#)

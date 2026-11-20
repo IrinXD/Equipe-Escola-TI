@@ -4,7 +4,7 @@
 >
 > Cada PDF cobre um grupo de **histórias de usuário** (HU001 a HU070). O nome do arquivo ("UC 1-6") segue a numeração das histórias, não a dos casos de uso. O texto de cada história está em [Histórias de Usuário](../02-requisitos/historias-de-usuario.md).
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -210,3 +210,7 @@ PDF original: [`UC 67-70.pdf`](../../Documentos%20de%20Diagramas/DiagramasDeSequ
 [![Diagrama de sequência HU 67-70](../assets/sequencia/hu-67-70.png)](../assets/sequencia/hu-67-70.png)
 
 _Clique na imagem para abrir em tamanho real._
+
+---
+
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md) · [↑ Topo da página](#)

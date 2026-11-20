@@ -80,8 +80,36 @@ def escrever(rel, linhas):
     caminho = os.path.join(DOCS, rel)
     os.makedirs(os.path.dirname(caminho), exist_ok=True)
     texto = "\n".join(linhas) if isinstance(linhas, list) else linhas
+    if rel.split("/")[0] in SECOES:
+        texto = texto.rstrip() + "\n" + "\n".join(rodape(rel))
     with open(caminho, "w", encoding="utf-8") as f:
         f.write(texto.rstrip() + "\n")
+
+
+# Pasta em docs/ -> (nome da seção, âncora no docs/README.md)
+SECOES = {
+    "01-gestao": ("Gestão e mercado", "1-gestão-e-mercado"),
+    "02-requisitos": ("Requisitos", "2-requisitos"),
+    "03-diagramas": ("Diagramas", "3-diagramas"),
+    "04-arquitetura": ("Arquitetura", "4-arquitetura"),
+    "05-design": ("Design e UI", "5-design-e-ui"),
+    "06-acompanhamento": ("Acompanhamento", "6-acompanhamento"),
+}
+
+
+def navegacao(destino):
+    """Links de volta: para a seção do sumário de onde a página veio e para o sumário geral."""
+    d = f"docs/{destino}"
+    sumario_geral = link(d, "docs/README.md")
+    secao = SECOES.get(destino.split("/")[0])
+    if not secao:
+        return f"[⬅ Voltar ao sumário]({sumario_geral})"
+    nome, anc = secao
+    return f"[⬅ Voltar para {nome}]({sumario_geral}#{anc}) · [Sumário geral]({sumario_geral})"
+
+
+def rodape(destino):
+    return ["", "---", "", navegacao(destino) + " · [↑ Topo da página](#)", ""]
 
 
 def cabecalho(destino, origens, extra=None):
@@ -94,7 +122,7 @@ def cabecalho(destino, origens, extra=None):
               "`python3 scripts/docs/gerar_docs.py`."]
     if extra:
         linhas += [">", f"> {extra}"]
-    linhas += ["", f"[⬅ Voltar ao sumário]({link(d, 'docs/README.md')})", ""]
+    linhas += ["", navegacao(destino), ""]
     return linhas
 
 
@@ -132,6 +160,78 @@ def ajustar_historias(md):
     return "\n".join(saida)
 
 
+def normalizar(md):
+    """Ajustes gerais no Markdown do pandoc para a página ficar mais limpa."""
+    linhas, no_codigo = [], False
+    tem_h1 = False
+    for l in md.split("\n"):
+        if l.startswith("```"):
+            no_codigo = not no_codigo
+        if not no_codigo:
+            if re.match(r"^#{1,6}\s*$", l):
+                continue  # título vazio no .docx
+            if l.startswith("# "):
+                tem_h1 = True
+            l = re.sub(r"^•\s+", "- ", l)  # marcador digitado à mão vira lista de verdade
+        linhas.append(l)
+    md = "\n".join(linhas)
+    if tem_h1:
+        # O título da página já é o único "#"; os títulos do documento descem um nível.
+        no_codigo, saida = False, []
+        for l in md.split("\n"):
+            if l.startswith("```"):
+                no_codigo = not no_codigo
+            saida.append("#" + l if not no_codigo and re.match(r"^#{1,5} ", l) else l)
+        md = "\n".join(saida)
+    md = re.sub(r"\n{3,}", "\n\n", md)
+    # Itens de lista curtos separados por linha em branco viram lista compacta.
+    return re.sub(r"(?m)^(- [^\n]{1,120})\n\n(?=- )", r"\1\n", md)
+
+
+def assinaturas_docx(origem):
+    """Lê o bloco de assinaturas direto do .docx: lá os dois nomes de cada linha
+    são separados por muitos espaços, que o pandoc junta num só."""
+    import zipfile
+
+    with zipfile.ZipFile(os.path.join(RAIZ, origem)) as z:
+        xml = z.read("word/document.xml").decode("utf-8")
+    paragrafos = []
+    for p in re.findall(r"<w:p[ >].*?</w:p>", xml, re.S):
+        p = re.sub(r"<w:tab/>", "    ", p)
+        paragrafos.append("".join(re.findall(r"<w:t(?: [^>]*)?>([^<]*)</w:t>", p)))
+    pessoas = []
+    for i, p in enumerate(paragrafos):
+        if p.strip().startswith("____") and i + 2 < len(paragrafos):
+            nomes = [n.strip() for n in re.split(r"\s{2,}", paragrafos[i + 1]) if n.strip()]
+            papeis = [n.strip(" ()") for n in re.split(r"\s{2,}", paragrafos[i + 2]) if n.strip()]
+            pessoas += list(zip(nomes, papeis + [""] * len(nomes)))
+    return pessoas
+
+
+def ajustar_abertura(md, origem):
+    """O documento de abertura usa parágrafos em negrito como títulos e um bloco de
+    assinaturas com linhas de sublinhado; aqui viram títulos, listas e uma tabela."""
+    corte = md.find("\\_\\_\\_\\_")
+    if corte != -1:
+        md = md[:corte].rstrip()
+    md = re.sub(r"^\*\*DOCUMENTO DE ABERTURA DO PROJETO\*\*\n+\*\*Mind Liner\*\*\n+", "", md)
+    # Cláusulas: "**1. Título  \n**Texto" -> "### 1. Título" + parágrafo
+    md = re.sub(r"^\*\*(\d+\.\s[^\n*]+?)\s*\n\*\*", r"### \1\n\n", md, flags=re.M)
+    md = re.sub(r"^\*\*([^*\n]{1,60})\*\*$", r"## \1", md, flags=re.M)
+
+    def tecnologias(m):
+        itens = [l for l in m.group(2).split("\n") if l.strip()]
+        lista = [f"- {l}" if len(l) < 40 else f"\n{l}" for l in itens]
+        return m.group(1) + "\n".join(lista) + "\n\n"
+    md = re.sub(r"(## Tecnologias\n\n)(.*?)\n\n(?=## )", tecnologias, md, flags=re.S)
+
+    pessoas = assinaturas_docx(origem)
+    if pessoas:
+        md += "\n\n## Assinaturas\n\n| Nome | Papel |\n|---|---|\n"
+        md += "\n".join(f"| {n} | {p} |" for n, p in pessoas) + "\n"
+    return md
+
+
 def converter_docx(origem, destino, titulo, extra_pos=None):
     nome = os.path.basename(destino)
     pasta_img = os.path.join(ASSETS, nome)
@@ -159,6 +259,9 @@ def converter_docx(origem, destino, titulo, extra_pos=None):
 
     if destino.endswith("historias-de-usuario"):
         md = ajustar_historias(md)
+    if destino.endswith("abertura-do-projeto"):
+        md = ajustar_abertura(md, origem)
+    md = normalizar(md)
 
     extra = None
     if destino.endswith("historias-de-usuario"):
@@ -335,6 +438,10 @@ def pagina_diagramas_drawio():
                                 cab("03-diagramas/diagrama-de-casos-de-uso.md", casos_src))
     drawio2mermaid.render_classes(os.path.join(RAIZ, classe_src), os.path.join(DOCS, "03-diagramas/diagrama-de-classes.md"),
                                   cab("03-diagramas/diagrama-de-classes.md", classe_src))
+    for destino in ("03-diagramas/diagrama-de-casos-de-uso.md", "03-diagramas/diagrama-de-classes.md"):
+        with open(os.path.join(DOCS, destino), encoding="utf-8") as f:
+            texto = f.read()
+        escrever(destino, texto)  # escrever() acrescenta o rodapé de navegação
 
 
 def indice(sequencias, wireframes):

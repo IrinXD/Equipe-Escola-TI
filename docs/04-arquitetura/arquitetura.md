@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`Documentação de Arquitetura - Encontro 6.docx`](../../Documenta%C3%A7%C3%A3o%20Arquitetura/Documenta%C3%A7%C3%A3o%20de%20Arquitetura%20-%20Encontro%206.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Arquitetura](../README.md#4-arquitetura) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -133,3 +133,7 @@
 <tbody>
 </tbody>
 </table>
+
+---
+
+[⬅ Voltar para Arquitetura](../README.md#4-arquitetura) · [Sumário geral](../README.md) · [↑ Topo da página](#)

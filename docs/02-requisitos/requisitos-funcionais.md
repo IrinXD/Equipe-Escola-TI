@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`Requisitos Funcionais_.docx`](../../Documentos%20de%20Diagramas/Requisitos%20Funcionais_.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -250,3 +250,7 @@ RF-081: O sistema deve permitir a consulta do histórico de compras realizadas p
 **RF-100:** O sistema deve possuir um módulo administrativo (backoffice) restrito a usuários com perfil de Administrador.
 
 **RF-101:** O sistema deve permitir ao administrador cadastrar, editar, inativar e precificar os itens oferecidos na loja (recompensas, avatares, temas, pacotes).
+
+---
+
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md) · [↑ Topo da página](#)

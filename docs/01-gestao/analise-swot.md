@@ -2,31 +2,40 @@
 
 > Página gerada a partir de [`Mind Liner — Análise SWOT Estratégica.docx`](../../Documenta%C3%A7%C3%A3o%20de%20Gest%C3%A3o%20-%20Mercado/Mind%20Liner%20%E2%80%94%20An%C3%A1lise%20SWOT%20Estrat%C3%A9gica.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md)
 
 ## Sumário
 
-- [FO — usar forças para capturar oportunidades](#fo--usar-forças-para-capturar-oportunidades)
-- [FA — usar forças para reduzir ameaças](#fa--usar-forças-para-reduzir-ameaças)
-- [DO — corrigir fraquezas para capturar oportunidades](#do--corrigir-fraquezas-para-capturar-oportunidades)
-- [DA — reduzir fraquezas e exposição](#da--reduzir-fraquezas-e-exposição)
+- [Resumo executivo](#resumo-executivo)
+- [Escopo e premissas](#escopo-e-premissas)
+- [Sinais de mercado](#sinais-de-mercado)
+- [Matriz SWOT](#matriz-swot)
+- [Implicações estratégicas](#implicações-estratégicas)
+  - [FO — usar forças para capturar oportunidades](#fo--usar-forças-para-capturar-oportunidades)
+  - [FA — usar forças para reduzir ameaças](#fa--usar-forças-para-reduzir-ameaças)
+  - [DO — corrigir fraquezas para capturar oportunidades](#do--corrigir-fraquezas-para-capturar-oportunidades)
+  - [DA — reduzir fraquezas e exposição](#da--reduzir-fraquezas-e-exposição)
+- [Prioridades de decisão](#prioridades-de-decisão)
+- [Plano recomendado para 90 dias](#plano-recomendado-para-90-dias)
+- [Métricas mínimas para validar o produto](#métricas-mínimas-para-validar-o-produto)
+- [Conclusão](#conclusão)
+- [Fontes e base de análise](#fontes-e-base-de-análise)
 
-# Resumo executivo
+## Resumo executivo
 
 | **O Mind Liner tem uma proposta coerente e com espaço de diferenciação: transformar planejamento, foco, execução e aprendizado em um ciclo único, com gamificação e inteligência artificial orientada pelo histórico do estudante. A maior oportunidade não é oferecer mais uma lista de tarefas com Pomodoro, mas provar que o produto ajuda o aluno a cumprir o plano, retomar sessões interrompidas e decidir o próximo passo. O principal risco é o escopo amplo diluir a entrega antes de existir evidência de retenção.** |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-# Escopo e premissas
+## Escopo e premissas
 
 - Base analisada: documentação do projeto no Google Drive, incluindo abertura, arquitetura, casos de uso, regras de negócio, aspectos legais, acessibilidade e organização do trabalho.
 
 - Contexto de mercado: pesquisa de concorrentes e três exportações do Ahrefs fornecidas em 28 de agosto de 2026.
-
 - Critério de avaliação: conceito, público, proposta de valor, escopo, riscos de execução e sinais de demanda. Inconsistências formais na numeração dos requisitos não foram consideradas.
 
 - Limite: não foi disponibilizado um domínio público do Mind Liner nem dados próprios de usuários, aquisição ou retenção; por isso, as conclusões de mercado são hipóteses estratégicas a validar.
 
-# Sinais de mercado
+## Sinais de mercado
 
 | Demanda observada   | 8.580 buscas/mês somadas nas 983 palavras-chave relevantes do recorte Ahrefs; 145 termos tinham volume maior que zero.  |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +43,7 @@
 | Sazonalidade        | Média de 3.792 buscas/mês nos últimos 12 meses; pico de 4.987 em março de 2026 e queda para 2.738 em julho.             |
 | Leitura estratégica | A demanda é estável no agregado, mas concentra picos no início do ciclo letivo e em períodos de preparação para provas. |
 
-# Matriz SWOT
+## Matriz SWOT
 
 <table>
 <thead>
@@ -79,25 +88,25 @@
 </tbody>
 </table>
 
-# Implicações estratégicas
+## Implicações estratégicas
 
-## FO — usar forças para capturar oportunidades
+### FO — usar forças para capturar oportunidades
 
 Transformar o ciclo plano → foco → registro → recomendação em demonstração pública do produto. Publicar ferramentas gratuitas e conteúdos que levem o visitante diretamente a esse ciclo.
 
-## FA — usar forças para reduzir ameaças
+### FA — usar forças para reduzir ameaças
 
 Diferenciar pela qualidade da retomada, pela recomendação baseada no histórico e por uma experiência brasileira segura, em vez de competir apenas por Pomodoro e pontos.
 
-## DO — corrigir fraquezas para capturar oportunidades
+### DO — corrigir fraquezas para capturar oportunidades
 
 Escolher um segmento inicial — recomendação: estudantes de ENEM e concursos — e validar uma promessa simples antes de expandir para todos os públicos.
 
-## DA — reduzir fraquezas e exposição
+### DA — reduzir fraquezas e exposição
 
 Adiar comunidade aberta, pagamentos complexos e personalizações pesadas até que o fluxo central tenha ativação e retenção comprovadas.
 
-# Prioridades de decisão
+## Prioridades de decisão
 
 | **Prioridade**                   | **Decisão recomendada**                                                                                                     | **Evidência de sucesso**                                                                      |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -107,38 +116,34 @@ Adiar comunidade aberta, pagamentos complexos e personalizações pesadas até q
 | 4\. Construir aquisição orgânica | Criar hub de plano de estudos, técnicas, Pomodoro, ENEM e ferramentas gratuitas.                                            | Impressões, posições, cadastros assistidos por conteúdo e conversão de ferramenta para conta. |
 | 5\. Controlar riscos             | Definir políticas de moderação, consentimento, logs, recuperação, testes e monitoramento antes de abrir recursos sensíveis. | Incidentes tratados dentro do SLA e ausência de bloqueios críticos para publicação.           |
 
-# Plano recomendado para 90 dias
+## Plano recomendado para 90 dias
 
 | **0–30 dias** | **Entrevistar 12–15 estudantes; escolher segmento e promessa; prototipar o ciclo central; definir eventos de analytics; congelar o escopo do MVP.**          |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 31–60 dias    | Implementar e testar o núcleo; lançar landing pages por intenção; publicar gerador de plano e guia principal; executar teste fechado com 20–30 usuários.     |
 | 61–90 dias    | Medir retenção; corrigir atritos; testar recomendação por histórico; iniciar parcerias; só então decidir sobre grupos, pagamentos e expansão de gamificação. |
 
-# Métricas mínimas para validar o produto
+## Métricas mínimas para validar o produto
 
 - Ativação: percentual que cria um plano e conclui a primeira sessão de foco no mesmo dia.
-
 - Retenção: D7 e D30 por segmento de estudante.
-
 - Valor: minutos focados por usuário ativo, aderência ao plano e taxa de retomada concluída.
-
 - IA: sugestões aceitas, editadas e ignoradas; efeito na aderência ao plano.
-
 - Aquisição: visita orgânica → ferramenta → cadastro → primeira sessão.
-
 - Saúde do produto: falhas de sessão, tempo de resposta, denúncias e incidentes de privacidade/moderação.
 
-# Conclusão
+## Conclusão
 
 | **A recomendação é lançar o Mind Liner como um sistema de execução do estudo, não como um catálogo de funcionalidades. O MVP deve provar uma única transformação: o estudante sabe o que fazer agora, consegue focar e retoma o plano quando falha. Se esse ciclo gerar retenção, gamificação, grupos, IA avançada e monetização passam a amplificadores; antes disso, são fontes de dispersão.** |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-# Fontes e base de análise
+## Fontes e base de análise
 
 - Ahrefs — histórico de volume de busca: br_19aeb58e857f51072dd208b7481ac6dd_search-volume-history_2026-08-28_19-55-16.csv
-
 - Ahrefs — palavras-chave e SERPs: google_br\_ acompanhamento matching-terms_serps_2026-08-28_19-58-02.csv
-
 - Ahrefs — análise em lote de páginas/domínios: batch_analysis_2026-08-28_20-01-17.csv
-
 - Sites oficiais dos concorrentes citados no relatório complementar de concorrência.
+
+---
+
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md) · [↑ Topo da página](#)

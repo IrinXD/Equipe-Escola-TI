@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`Regras de negócio.docx`](../../Documentos%20de%20Diagramas/Regras%20de%20neg%C3%B3cio.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -212,3 +212,7 @@ RB-067: Os dados de pagamento devem ser tratados de acordo com os mecanismos de 
 **Administrador" e Backoffice**
 
 **RB-081:** Um item da loja não pode ser excluído se já tiver sido adquirido por algum usuário; ele deve ser marcado como "Inativo/Indisponível".
+
+---
+
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md) · [↑ Topo da página](#)

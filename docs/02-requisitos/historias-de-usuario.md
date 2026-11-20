@@ -4,7 +4,7 @@
 >
 > Os diagramas de sequência de cada história estão em [Diagramas de Sequência](../03-diagramas/diagramas-de-sequencia.md).
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -394,3 +394,7 @@ Como administrador, quero definir e atualizar os preços dos itens da loja, para
 ### HU070 — Gerenciar recompensas
 
 Como administrador, quero cadastrar, editar e inativar recompensas, para que eu possa manter o sistema de recompensas atualizado.
+
+---
+
+[⬅ Voltar para Requisitos](../README.md#2-requisitos) · [Sumário geral](../README.md) · [↑ Topo da página](#)

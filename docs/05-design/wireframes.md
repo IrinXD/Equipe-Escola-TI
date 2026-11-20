@@ -4,7 +4,7 @@
 >
 > Os PDFs dos wireframes são grandes (até 20 MB) e o GitHub nem sempre consegue abri-los. Aqui ficam prévias em imagem; para os detalhes, use o PDF ou o [Figma](../../Design%20-%20UI/README.md).
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Design e UI](../README.md#5-design-e-ui) · [Sumário geral](../README.md)
 
 ## Sumário
 
@@ -134,3 +134,7 @@ PDF original: [`12 · Estados do sistema.pdf`](../../Design%20-%20UI/Wireframes/
 <a href="../assets/wireframes/12-estados-do-sistema.jpg"><img src="../assets/wireframes/12-estados-do-sistema.jpg" alt="12 · Estados do sistema" width="480"></a>
 
 _Clique na imagem para abrir em tamanho real._
+
+---
+
+[⬅ Voltar para Design e UI](../README.md#5-design-e-ui) · [Sumário geral](../README.md) · [↑ Topo da página](#)

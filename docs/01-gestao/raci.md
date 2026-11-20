@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`RACI.xlsx`](../../Documenta%C3%A7%C3%A3o%20de%20Gest%C3%A3o%20-%20Mercado/RACI.xlsx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md)
 
 **R** = Responsável (executa) · **A** = Aprovador (presta contas) · **C** = Consultado · **I** = Informado
 
@@ -17,3 +17,7 @@
 | 7. Integrar Gamificação e Pagamentos (UC-31 a UC-37, UC-68) | A | I | I | R | R | I |
 | 8. Realizar Testes de Funcionalidade (Review) | A | C | C | C | C | R |
 | 9. Implantar e Disponibilizar (Deploy) | A | C | I | R | R | I |
+
+---
+
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md) · [↑ Topo da página](#)

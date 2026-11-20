@@ -2,7 +2,7 @@
 
 > Página gerada a partir de [`Consolidado de Horas por Integrante - Projeto TI.pdf`](../../Consolidado%20de%20Horas%20por%20Integrante%20-%20Projeto%20TI.pdf) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Acompanhamento](../README.md#6-acompanhamento) · [Sumário geral](../README.md)
 
 ## Resumo
 
@@ -18,3 +18,7 @@
 | **Total** | **100,18 h** | **100,0%** |
 
 O detalhamento por ticket está no [PDF original](../../Consolidado%20de%20Horas%20por%20Integrante%20-%20Projeto%20TI.pdf), que o GitHub mostra direto no navegador.
+
+---
+
+[⬅ Voltar para Acompanhamento](../README.md#6-acompanhamento) · [Sumário geral](../README.md) · [↑ Topo da página](#)

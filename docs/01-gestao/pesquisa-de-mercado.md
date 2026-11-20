@@ -2,31 +2,41 @@
 
 > Página gerada a partir de [`MindLiner — Pesquisa de Mercado e Aplicação de Ferramentas.docx`](../../Documenta%C3%A7%C3%A3o%20de%20Gest%C3%A3o%20-%20Mercado/MindLiner%20%E2%80%94%20Pesquisa%20de%20Mercado%20e%20Aplica%C3%A7%C3%A3o%20de%20Ferramentas.docx) para leitura no GitHub. O arquivo original continua sendo a fonte oficial: edite o original e rode `python3 scripts/docs/gerar_docs.py`.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md)
 
 ## Sumário
 
-- [2.1 Domínio nacional — Registro.br](#21-domínio-nacional--registrobr)
-- [2.2 Domínio internacional — GoDaddy](#22-domínio-internacional--godaddy)
-- [1. Usuários e Autenticação](#1-usuários-e-autenticação)
-- [2. Gerenciamento de Estudos](#2-gerenciamento-de-estudos)
-- [3. Controle de Tempo](#3-controle-de-tempo)
-- [4. Técnicas de Estudo](#4-técnicas-de-estudo)
-- [5. Gamificação](#5-gamificação)
-- [6. Grupos de Estudo](#6-grupos-de-estudo)
-- [7. Monitoramento e Relatórios](#7-monitoramento-e-relatórios)
-- [8. Inteligência Artificial](#8-inteligência-artificial)
-- [9. Notificações](#9-notificações)
-- [10. Foco e Controle de Distrações](#10-foco-e-controle-de-distrações)
-- [11. Personalização e Acessibilidade](#11-personalização-e-acessibilidade)
-- [12. Compras e Pagamentos](#12-compras-e-pagamentos)
-  - [13. Contratação Eletrônica](#13-contratação-eletrônica)
-- [14. Termos de Uso e Contratos](#14-termos-de-uso-e-contratos)
-- [15. Administração e Loja](#15-administração-e-loja)
-- [Medidas de proteção e retenção](#medidas-de-proteção-e-retenção)
-- [Sinais de mercado](#sinais-de-mercado)
-- [Concorrentes de produto](#concorrentes-de-produto)
-- [Conclusão integrada](#conclusão-integrada)
+- [Organização do documento](#organização-do-documento)
+- [1. Apresentação do projeto](#1-apresentação-do-projeto)
+- [2. Pesquisa e definição de domínios](#2-pesquisa-e-definição-de-domínios)
+  - [2.1 Domínio nacional — Registro.br](#21-domínio-nacional--registrobr)
+  - [2.2 Domínio internacional — GoDaddy](#22-domínio-internacional--godaddy)
+- [3. Pesquisa de viabilidade da marca no INPI](#3-pesquisa-de-viabilidade-da-marca-no-inpi)
+- [4. Mapeamento do Código de Defesa do Consumidor](#4-mapeamento-do-código-de-defesa-do-consumidor)
+  - [1. Usuários e Autenticação](#1-usuários-e-autenticação)
+  - [2. Gerenciamento de Estudos](#2-gerenciamento-de-estudos)
+  - [3. Controle de Tempo](#3-controle-de-tempo)
+  - [4. Técnicas de Estudo](#4-técnicas-de-estudo)
+  - [5. Gamificação](#5-gamificação)
+  - [6. Grupos de Estudo](#6-grupos-de-estudo)
+  - [7. Monitoramento e Relatórios](#7-monitoramento-e-relatórios)
+  - [8. Inteligência Artificial](#8-inteligência-artificial)
+  - [9. Notificações](#9-notificações)
+  - [10. Foco e Controle de Distrações](#10-foco-e-controle-de-distrações)
+  - [11. Personalização e Acessibilidade](#11-personalização-e-acessibilidade)
+  - [12. Compras e Pagamentos](#12-compras-e-pagamentos)
+  - [14. Termos de Uso e Contratos](#14-termos-de-uso-e-contratos)
+  - [15. Administração e Loja](#15-administração-e-loja)
+- [5. Mapeamento da Lei Geral de Proteção de Dados](#5-mapeamento-da-lei-geral-de-proteção-de-dados)
+  - [Medidas de proteção e retenção](#medidas-de-proteção-e-retenção)
+- [6. Análise SWOT — pontos fortes e oportunidades](#6-análise-swot--pontos-fortes-e-oportunidades)
+- [7. Duplo Diamante](#7-duplo-diamante)
+- [8. Matriz GUT](#8-matriz-gut)
+- [9. Matriz RACI](#9-matriz-raci)
+- [10. Análise complementar de mercado e concorrentes](#10-análise-complementar-de-mercado-e-concorrentes)
+  - [Sinais de mercado](#sinais-de-mercado)
+  - [Concorrentes de produto](#concorrentes-de-produto)
+  - [Conclusão integrada](#conclusão-integrada)
 
 **UNICESUMAR — UNIVERSIDADE CESUMAR**
 
@@ -43,39 +53,29 @@ Documento unificado das análises do projeto
 
 Agosto de 2026
 
-# Organização do documento
+## Organização do documento
 
 - 1\. Apresentação do projeto
-
 - 2\. Pesquisa e definição de domínios
-
 - 3\. Pesquisa de viabilidade da marca no INPI
-
 - 4\. Mapeamento do Código de Defesa do Consumidor
-
 - 5\. Mapeamento da LGPD
-
 - 6\. Análise SWOT \| pontos fortes e oportunidades
-
 - 7\. Duplo Diamante
-
 - 8\. Matriz GUT
-
 - 9\. Matriz RACI
-
 - 10\. Análise complementar de mercado e concorrentes
-
 - Anexo A. Termos de Uso e Política de Privacidade
 
-# 1. Apresentação do projeto
+## 1. Apresentação do projeto
 
 O MindLiner é uma plataforma de apoio aos estudos voltada à organização, ao foco e à motivação. A solução prevê aplicação web em React, aplicação mobile em React Native, backend em Java e banco de dados PostgreSQL. Entre as funcionalidades definidas estão planos de estudo, técnica Pomodoro integrada, sistema de pontos e personalização de personagem com itens cosméticos.
 
 As análises reunidas a seguir atendem aos blocos solicitados na atividade de Pesquisa de Mercado e aplicação de ferramentas, mantendo o conteúdo produzido pela equipe e organizando-o em uma sequência única para leitura e correção.
 
-# 2. Pesquisa e definição de domínios
+## 2. Pesquisa e definição de domínios
 
-## 2.1 Domínio nacional — Registro.br
+### 2.1 Domínio nacional — Registro.br
 
 **Domínio definido:** mindliner.com.br
 
@@ -85,7 +85,7 @@ A escolha mantém correspondência direta com o nome do produto, facilita a memo
 
 ***Figura 1 — Consulta do domínio mindliner.com.br no Registro.br, realizada pela equipe em 24/08/2026.***
 
-## 2.2 Domínio internacional — GoDaddy
+### 2.2 Domínio internacional — GoDaddy
 
 **Domínio definido:** mindliner.net
 
@@ -95,7 +95,7 @@ A extensão .net é reconhecida internacionalmente e mantém relação com produ
 
 ***Figura 2 — Consulta internacional no GoDaddy. O resultado mostra o .com em uso e alternativas de extensão, incluindo .net.***
 
-# 3. Pesquisa de viabilidade da marca no INPI
+## 3. Pesquisa de viabilidade da marca no INPI
 
 ![Figura](../assets/pesquisa-de-mercado/image3.png)
 
@@ -105,7 +105,7 @@ A consulta não encontrou resultado para a expressão pesquisada. Conforme o pr�
 
 O registro do MindLiner será realizado estrategicamente na Classe 09 do INPI, pois o produto é fundamentalmente um software focado em auxiliar estudantes na gestão do tempo de estudo e na organização de mapas e planos de estudo. Esse enquadramento garante a proteção jurídica da marca no mercado de tecnologia, impedindo que concorrentes lancem ferramentas com nomes semelhantes nas lojas de aplicativos (como Google Play e App Store). Dessa forma, asseguramos a exclusividade de uso da marca no nosso ambiente de atuação, prevenindo a concorrência desleal e evitando que o público estudante confunda nossa solução com outras plataformas.
 
-# 4. Mapeamento do Código de Defesa do Consumidor
+## 4. Mapeamento do Código de Defesa do Consumidor
 
 A seguir, o mapeamento produzido pela equipe é apresentado de forma integral, com reorganização apenas de títulos e espaçamentos para integração ao documento.
 
@@ -117,7 +117,7 @@ O mapeamento foi realizado conforme agrupamento dos requisitos disponíveis até
 
 O texto compilado utilizado contempla as alterações de novas leis, apresentando sua versão vigente conforme o Governo Federal.
 
-## 1. Usuários e Autenticação
+### 1. Usuários e Autenticação
 
 Este agrupamento contempla o cadastro, autenticação, recuperação de acesso, gerenciamento das informações do usuário e encerramento da conta.
 
@@ -133,7 +133,7 @@ O consumidor possui direito de acesso às informações existentes em cadastros 
 
 Esse artigo possui relação com o gerenciamento das informações da conta. Entretanto, os aspectos específicos de tratamento, correção, eliminação e proteção de dados pessoais devem ser complementados pela LGPD.
 
-## 2. Gerenciamento de Estudos
+### 2. Gerenciamento de Estudos
 
 Este agrupamento compreende o gerenciamento de disciplinas, conteúdos, roteiros, metas, sessões, histórico e progresso dos estudos.
 
@@ -153,7 +153,7 @@ O dispositivo trata de situações em que o serviço apresenta vícios de qualid
 
 Aplicação ao sistema: Funcionalidades de estudo que sejam apresentadas como parte do serviço devem funcionar de maneira compatível com suas características anunciadas.
 
-## 3. Controle de Tempo
+### 3. Controle de Tempo
 
 O agrupamento contempla cronômetro, timer, início, pausa e encerramento das sessões, além da persistência e recuperação do estado da sessão.
 
@@ -169,7 +169,7 @@ A funcionalidade deve corresponder às características e condições apresentad
 
 Portanto, a aplicação desses artigos está relacionada principalmente à confiabilidade e adequação das funcionalidades oferecidas.
 
-## 4. Técnicas de Estudo
+### 4. Técnicas de Estudo
 
 O sistema disponibiliza diferentes técnicas de estudo, incluindo técnicas predefinidas e personalizadas, com parâmetros, ciclos, etapas e acompanhamento do progresso.
 
@@ -193,7 +193,7 @@ As informações apresentadas ao consumidor devem ser corretas, claras, precisas
 
 Aplicação: a divulgação das técnicas de estudo não deve atribuir ao sistema características, resultados ou funcionalidades que ele não efetivamente oferece.
 
-## 5. Gamificação
+### 5. Gamificação
 
 A gamificação compreende pontos, moedas virtuais, check-ins, medalhas, conquistas, ranking e troca de moedas por recompensas.
 
@@ -215,7 +215,7 @@ O fornecedor não pode se aproveitar da vulnerabilidade ou ignorância do consum
 
 Aplicação no sistema: A gamificação deve possuir regras transparentes e não pode utilizar mecanismos que levem o usuário a realizar uma aquisição mediante informação enganosa ou prática abusiva.
 
-## 6. Grupos de Estudo
+### 6. Grupos de Estudo
 
 O agrupamento permite criação de grupos, ingresso e saída de participantes, visualização de integrantes, definição de privacidade, gerenciamento de membros e compartilhamento por convites.
 
@@ -229,7 +229,7 @@ As funcionalidades relacionadas aos grupos devem funcionar de acordo com as cara
 
 Observação: a proteção das informações dos participantes e o tratamento dos dados pessoais estão mais diretamente relacionados à LGPD do que ao CDC.
 
-## 7. Monitoramento e Relatórios
+### 7. Monitoramento e Relatórios
 
 O sistema disponibiliza dashboards, gráficos, indicadores e relatórios relacionados ao desempenho dos estudos.
 
@@ -245,7 +245,7 @@ Os relatórios e indicadores oferecidos como parte do serviço devem funcionar d
 
 Caso determinados indicadores ou resultados sejam utilizados na publicidade do produto, as informações não podem induzir o consumidor a conclusões equivocadas sobre o desempenho ou as capacidades da plataforma.
 
-## 8. Inteligência Artificial
+### 8. Inteligência Artificial
 
 A plataforma possui um agente de inteligência artificial que utiliza informações fornecidas pelo usuário e seu histórico de estudos para gerar recomendações e metas personalizadas.
 
@@ -263,7 +263,7 @@ A plataforma não deve atribuir à inteligência artificial capacidades que ela 
 
 Como a IA utiliza informações pessoais e histórico de estudos, a análise deve ser complementada pela LGPD, especialmente quanto à transparência e ao tratamento dos dados.
 
-## 9. Notificações
+### 9. Notificações
 
 O sistema permite configurar preferências e ativar ou desativar notificações.
 
@@ -279,7 +279,7 @@ Quando as notificações tiverem finalidade comercial ou promocional, seu conte�
 
 O CDC veda o fornecimento de produto ou serviço sem solicitação prévia do consumidor. Por isso, é importante diferenciar notificações necessárias ao funcionamento do serviço de comunicações comerciais.
 
-## 10. Foco e Controle de Distrações
+### 10. Foco e Controle de Distrações
 
 O sistema permite configurar aplicativos para bloqueio e identificar a abertura desses aplicativos durante uma sessão de estudo.
 
@@ -291,7 +291,7 @@ O usuário deve ser informado sobre como o mecanismo funciona e sobre eventuais 
 
 A funcionalidade deve funcionar de acordo com as características apresentadas ao consumidor. Assim, se houver limitações técnicas — por exemplo, determinados aplicativos ou situações que não possam ser bloqueadas — essa informação deve ser apresentada de forma adequada.
 
-## 11. Personalização e Acessibilidade
+### 11. Personalização e Acessibilidade
 
 O sistema permite personalização visual, modo claro e escuro, cores, ícones, GIFs e filtros de acessibilidade.
 
@@ -307,7 +307,7 @@ Quando determinada opção de personalização for apresentada como característ
 
 As descrições das funcionalidades devem corresponder ao seu comportamento real.
 
-## 12. Compras e Pagamentos
+### 12. Compras e Pagamentos
 
 Este é o agrupamento com maior incidência direta do CDC, pois envolve aquisição de recursos pagos, meios de pagamento, confirmação de transações, comprovantes e histórico de compras.
 
@@ -316,13 +316,9 @@ Este é o agrupamento com maior incidência direta do CDC, pois envolve aquisiç
 O consumidor deve receber informações claras sobre:
 
 - Produto ou recurso;
-
 - Características;
-
 - Preço;
-
 - Condições de pagamento;
-
 - Restrições aplicáveis.
 
 **Art. 30 — Vinculação da oferta**
@@ -345,7 +341,7 @@ O consumidor não pode ser exposto a constrangimento na cobrança, e o CDC prev�
 
 Nas contratações realizadas fora do estabelecimento comercial, o consumidor pode desistir do contrato no prazo de 7 dias, nas condições estabelecidas pelo artigo, com devolução dos valores pagos.
 
-### 13. Contratação Eletrônica
+#### 13. Contratação Eletrônica
 
 Como a aquisição dos recursos ocorre por meio digital, além do CDC deve ser considerado o Decreto nº 7.962/2013, que regulamenta a contratação no comércio eletrônico.
 
@@ -358,13 +354,9 @@ Estabelece informações que devem estar disponíveis no ambiente eletrônico, c
 Determina mecanismos que facilitem a contratação, incluindo:
 
 - Apresentação de resumo do contrato;
-
 - Possibilidade de correção de erros antes da conclusão;
-
 - Confirmação imediata da aceitação;
-
 - Disponibilização do contrato ao consumidor;
-
 - Mecanismos de segurança para pagamento e tratamento dos dados.
 
 **Decreto nº 7.962/2013 — Art. 5º**
@@ -373,7 +365,7 @@ Trata do exercício do direito de arrependimento nas contratações eletrônicas
 
 Portanto, a compra não deve ser tratada somente como uma operação de pagamento: Existe todo um processo de contratação eletrônica que precisa fornecer informação, confirmação, segurança e mecanismos de cancelamento.
 
-## 14. Termos de Uso e Contratos
+### 14. Termos de Uso e Contratos
 
 Os Termos de Uso estabelecem as condições de utilização da plataforma e, quando houver relação de consumo, estão sujeitos às regras de proteção contratual do CDC.
 
@@ -390,20 +382,16 @@ As cláusulas contratuais devem ser interpretadas da maneira mais favorável ao 
 São nulas cláusulas que, entre outras hipóteses:
 
 - Eliminem ou reduzam indevidamente a responsabilidade do fornecedor;
-
 - Retirem direitos de reembolso previstos no CDC;
-
 - Imponham desvantagem exagerada ao consumidor;
-
 - Permitam alteração unilateral do preço;
-
 - Permitam alteração unilateral do conteúdo ou qualidade do contrato após sua celebração.
 
 **Art. 54 — Contratos de adesão**
 
 É relevante porque os Termos de Uso de uma plataforma normalmente são apresentados ao usuário de forma padronizada, sem negociação individual das cláusulas.
 
-## 15. Administração e Loja
+### 15. Administração e Loja
 
 O backoffice permite que administradores cadastrem, editem, inativam e definam preços dos itens oferecidos na loja.
 
@@ -421,7 +409,7 @@ O CDC considera abusivas cláusulas que permitam ao fornecedor variar unilateral
 
 Isso é particularmente relevante para a loja: Alterações administrativas podem valer para novas compras, mas não devem modificar arbitrariamente condições já contratadas pelo consumidor.
 
-# 5. Mapeamento da Lei Geral de Proteção de Dados
+## 5. Mapeamento da Lei Geral de Proteção de Dados
 
 A política elaborada pela equipe foi organizada abaixo conforme os quatro pontos solicitados na atividade. O texto integral dos Termos de Uso e da Política de Privacidade está preservado no Anexo A.
 
@@ -432,21 +420,17 @@ A política elaborada pela equipe foi organizada abaixo conforme os quatro ponto
 | **Dados compartilhados** | Poderá haver parceria com empresas do setor educacional para cursos, materiais, promoções, ofertas, convites e serviços compatíveis com os interesses do usuário. O compartilhamento deve ser limitado à finalidade e aos dados necessários, com informação adequada ao titular. |
 | **Uso comercial**        | Para usuários maiores de idade, o uso de dados para métricas, análises comerciais ou publicidade será opcional e dependerá de escolha informada. A recusa não impede o uso das funcionalidades essenciais, e o consentimento poderá ser revogado.                                |
 
-## Medidas de proteção e retenção
+### Medidas de proteção e retenção
 
 - Controle de acesso e de permissões
-
 - Autenticação e proteção de credenciais
-
 - Criptografia quando aplicável
-
 - Monitoramento de acessos e backups
-
 - Restrição de acesso e procedimentos de resposta a incidentes
 
 As medidas devem ser consideradas desde a concepção do produto e observar a adoção de salvaguardas técnicas e administrativas contra acessos não autorizados e situações acidentais ou ilícitas.
 
-# 6. Análise SWOT — pontos fortes e oportunidades
+## 6. Análise SWOT — pontos fortes e oportunidades
 
 Conforme o recorte solicitado na atividade, esta seção apresenta os pontos fortes e as oportunidades identificados para o MindLiner.
 
@@ -459,7 +443,7 @@ Conforme o recorte solicitado na atividade, esta seção apresenta os pontos for
 | • Stack adequada ao objetivo: Java, React Native/Expo e PostgreSQL.                             | • Parcerias com escolas, cursinhos, professores e criadores podem reduzir custo de aquisição.                     |
 | • Atenção documentada a privacidade, acessibilidade e aspectos legais.                          | • Privacidade, acessibilidade, ausência de anúncios e segurança para estudantes podem fortalecer confiança.       |
 
-# 7. Duplo Diamante
+## 7. Duplo Diamante
 
 Ferramenta de processo que divide o desenvolvimento em quatro fases, alternando entre pensamento divergente (explorar) e convergente (decidir).
 
@@ -475,7 +459,7 @@ Ferramenta de processo que divide o desenvolvimento em quatro fases, alternando 
 
 ***Figura 4 — Aplicação do Duplo Diamante ao desenvolvimento do MindLiner.***
 
-# 8. Matriz GUT
+## 8. Matriz GUT
 
 A Matriz GUT será aplicada na etapa de identificação e priorização dos problemas relacionados ao contexto de utilização do MindLiner. A escolha desse ponto é estratégica, pois o sistema foi desenvolvido com o objetivo de solucionar dificuldades identificadas em relação aos estudos e, portanto, é necessário estabelecer quais problemas apresentam maior impacto e devem ser tratados com prioridade.
 
@@ -485,7 +469,7 @@ A Matriz GUT será aplicada na etapa de identificação e priorização dos prob
 
 A maior prioridade é a dificuldade de organizar e acompanhar as matérias para estudo (125 pontos), seguida da dificuldade para saber quanto tempo o estudante realmente estudou (100 pontos).
 
-# 9. Matriz RACI
+## 9. Matriz RACI
 
 Legenda: R = Responsável pela execução; A = Responsável final pela aprovação; C = Consultado; I = Informado.
 
@@ -501,11 +485,11 @@ Legenda: R = Responsável pela execução; A = Responsável final pela aprovaç�
 | 8\. Realizar Testes de Funcionalidade (Review)               | A      | C                | C            | C               | C                | R            |
 | 9\. Implantar e Disponibilizar (Deploy)                      | A      | C                | I            | R               | R                | I            |
 
-# 10. Análise complementar de mercado e concorrentes
+## 10. Análise complementar de mercado e concorrentes
 
 O MindLiner entra em uma categoria concorrida, mas ainda fragmentada. Tudy, NoEstudo e Aprovado são referências brasileiras próximas; YPT e Study Bunny mostram padrões de escala em foco social e gamificação. A oportunidade de diferenciação está em combinar organização, foco e retomada do plano com uma experiência brasileira, acessível e segura.
 
-## Sinais de mercado
+### Sinais de mercado
 
 | **Indicador**               | **Resultado**                                                        | **Leitura**                                                                     |
 |-----------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -513,7 +497,7 @@ O MindLiner entra em uma categoria concorrida, mas ainda fragmentada. Tudy, NoEs
 | Histórico de 24 meses       | 3.792/mês nos últimos 12 meses vs. 3.781 no período anterior (+0,3%) | Mercado estável no agregado, com sazonalidade mais importante que crescimento.  |
 | Termo líder                 | “plano de estudos”: 2.400 buscas/mês; KD 1; TP 3.300                 | Melhor tema-pilar para aquisição e demonstração do produto.                     |
 
-## Concorrentes de produto
+### Concorrentes de produto
 
 | **Concorrente**     | **Força principal**                                                                                | **Resposta recomendada**                                                                  |
 |---------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -523,6 +507,10 @@ O MindLiner entra em uma categoria concorrida, mas ainda fragmentada. Tudy, NoEs
 | **YPT / Yeolpumta** | Timer por matéria, bloqueio de apps, planner, grupos, ranking e estatísticas; grande escala móvel. | Diferenciar por localização brasileira, privacidade, segurança e orientação pedagógica.   |
 | **Study Bunny**     | Personagem, moedas, loja, tarefas, flashcards e acompanhamento; forte apelo emocional.             | Construir motivação sem infantilizar todo o público e permitir camadas de personalização. |
 
-## Conclusão integrada
+### Conclusão integrada
 
 O conjunto das análises sustenta a viabilidade conceitual do MindLiner e indica como prioridade o fluxo central de organização, foco, registro e retomada do estudo. Domínio, marca, requisitos legais, priorização e responsabilidades estão mapeados. O diferencial precisa ser demonstrado na prática pela aderência do estudante ao plano, com gamificação integrada como apoio à motivação.
+
+---
+
+[⬅ Voltar para Gestão e mercado](../README.md#1-gestão-e-mercado) · [Sumário geral](../README.md) · [↑ Topo da página](#)

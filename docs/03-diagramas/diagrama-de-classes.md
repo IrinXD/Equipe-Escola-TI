@@ -4,7 +4,7 @@
 >
 > Para ver o desenho original, com o layout do draw.io: [abrir no visualizador do draw.io](https://viewer.diagrams.net/?nav=1&lightbox=1#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fbialemesvsouza%2FEquipe-Escola-TI%2Fmain%2FDocumentos%2520de%2520Diagramas%2FDiagrama_De_Classe_Atualizado.drawio) (só leitura) ou abra o arquivo no [app.diagrams.net](https://app.diagrams.net) / extensão Draw.io do VS Code.
 
-[⬅ Voltar ao sumário](../README.md)
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md)
 
 
 **51 classes** em **10 módulos** e **62 relacionamentos**.
@@ -1201,3 +1201,7 @@ classDiagram
 | `+ aplicada: boolean` |  |
 
 </details>
+
+---
+
+[⬅ Voltar para Diagramas](../README.md#3-diagramas) · [Sumário geral](../README.md) · [↑ Topo da página](#)
